@@ -1,0 +1,15 @@
+$default-fonts: "roboto-example", sans-serif
+$accent: orange
+$gray: #E3E3E3
+$tetx: #333
+$grid-gutter-width: 20px
+$grid-columns: 12
+$grid-breackpoints: (xs: 0px, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$container-max-width: (sm: 540px, md: 720px, lg: 960px, xl: 1140px )
+$landscape-width: "@media screen and (orientation: landscape)"
+$desctop-width: "(min-device-width: 968px)"
+$tablet-width: "(min-device-width: 768px) and (max-device-width: 967px)"
+$mobile-width: "(max-device-width:767px)"
+$gutter: $grid-gutter-width
+@mixin make-col-offset($columns)
+  margin-left: percentage(($columns / $grid-columns))
